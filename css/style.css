@@ -1,0 +1,565 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+}
+
+/* emplacement header */
+
+header  {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    align-items: center;
+
+}
+
+header a {
+    padding-top: 50px;
+}
+/* service acceuil barre nav */ 
+header ul a{
+    text-decoration: none;
+    color: gray;
+    margin-left: 20px;
+    font-size: 14px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+header ul a:hover {
+    color: black;
+    border-top: 3px solid #5cadd3;
+    padding-top: 30px;
+    
+
+}
+
+/* début du acceuil*/
+/*debut slogan*/
+/*****  debut du slider et de son animation *****/
+
+#accueil {
+    max-width: 100%;
+    height: 100%;
+    
+}
+
+
+.slider-1 {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slider-1 img { 
+    width:100%;
+    flex-shrink: 0;
+    z-index: 1;
+
+}
+
+
+
+.slider-1 .slider {
+    position: relative;
+    display: flex;
+    animation:slider-1 15s infinite ;
+    
+}
+
+@keyframes slider-1 {
+    0%, 
+    45% {
+    transform: translateX(0%);
+}
+    50%,
+    100%{
+    transform: translateX(-100%);
+}
+}
+
+.slogan {
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+}
+
+
+.slogan h1 strong {
+    color: #5cadd3;
+
+}
+
+.slogan h1 {
+    margin-left: 10%;
+    color: rgb(232,232,235);
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+
+}
+
+.text-slogan {
+    color: rgb(232,232,235);
+    text-indent: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5%;
+    
+}
+
+.text-slogan button {
+    background-color: #5cadd3;
+    margin-left: 10%;
+    color: #fff;
+    border-color: #5cadd3;
+    margin-top: 2%;
+    
+    
+}
+
+
+/**** fin slider ****/
+/*fin de l'acceuil*/
+/* début du main (service) */
+
+#services {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2%;
+    margin-top: 160px;
+    
+
+}
+
+.text-services {
+    display: flex;
+    text-align: center;
+    margin-right: 10%;
+}
+.description {
+    margin-top: 15px;
+    color:grey;
+    
+}
+
+.webagency img {
+    margin-top: 5%;
+    margin-left: 150px;
+
+}
+
+.text-image { 
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: center;
+    justify-content: space-around
+    
+    
+}
+
+.barre {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+
+.hr {
+    border-top: 2px solid lightgrey;
+    width: 70px;
+
+}
+
+.cerle {
+    background-color: #5cadd3;
+    height:20px;
+    width: 20px;
+    border-radius: 100%;
+    border: 5px solid white;
+    
+}
+
+
+.text-services p { 
+    color:gray;
+
+}
+    
+/* emplacement des icone et le cerlce*/
+/*creation de la l'animation sur l'icone*/
+.uxdesign {
+    display: flex;
+    
+}
+
+.uidesign {
+    display: flex;
+}
+
+
+.seo{
+    display: flex;
+}
+
+.icone {    
+    display: flex;
+    padding: 5px;
+    
+}
+
+.circle {
+    border: 2px solid rgb(160, 157, 157);
+    position: relative;
+    width: 60px;
+    height: 60px;   
+    border-radius: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0 ;
+    
+}
+
+
+
+.tchoupi {
+    background-color: #5cadd3;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    position: absolute;
+    top: 5px;
+    border-radius:100%;
+    background-color: #5cadd3;
+    border: 4px solid white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: circle 5s linear infinite; 
+    
+}
+
+
+.text-description {
+    margin-left: 50px;
+}
+
+.fa-chart-line {
+    color: #5cadd3;
+    font-size: 20px;
+    padding-top: 30%;
+    padding-left: 30%;
+    
+    
+}
+
+.fa-cubes {
+
+    color: #5cadd3;
+    font-size: 20px;
+    padding-top: 30%;
+    padding-left: 30%;
+    
+    
+}
+
+.fa-chart-pie {
+    color: #5cadd3;
+    font-size: 20px;
+    padding-top: 30%;
+    padding-left: 30%;
+}
+
+
+.text-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+}
+
+@keyframes circle{
+    0%{
+        transform: rotate(0deg)translate(30px)rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg)translate(30px)rotate(360deg);
+    }
+
+}
+/* fin de l'emplacement icone */
+/******* fin de services *************/
+/***début du projet *****/
+
+#projets {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.presentation  {
+    background-color: rgb(238, 237, 237);
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.nav-projets {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.nav-projets a {
+    color: black;
+    background-color: #e5e5e5e5;
+    text-decoration: none;
+    padding: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid transparent;
+}
+
+.nav-projets a:hover {
+    color:#f6f5f5e5;
+    background-color: #5cadd3;
+
+}
+
+.all {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+
+}
+
+.folio {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.images {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.images img {
+    width: 310px;
+
+}
+
+.images figure {
+    position: relative;
+    margin: 15px;
+
+}    
+
+
+.images figcaption {
+    position: absolute;
+    bottom: 5px;
+    font-size: 16px;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.7);
+    width: 90%;
+    visibility: hidden; /*cache l'img */
+    text-align: left;
+    color: #ffffffd3 ;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.images img:hover + figcaption, .images figcaption:hover {
+    visibility: visible; /**/
+}
+
+/******* fin du projet portfolio ******/
+
+/******début maps & formulaire ******/
+
+#contact{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    
+}
+    
+.maps {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+
+}
+
+
+iframe {
+    width: 100%;
+    height: 600px;
+    border: 0;
+    opacity:0.8;
+    
+    
+    
+}
+
+.filter {
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    background-color: lightblue;
+    visibility: visible;
+    opacity: 0.3;
+    
+    
+
+}
+
+form {
+    background-color:rgb(178, 220, 234);
+    position: absolute;
+    margin:60px;
+    padding-bottom:30px;
+    padding-top: px;
+    padding: 15px;
+    left:55%;
+    border-radius: 5%;
+    
+}
+
+
+fieldset {
+    border:0 ;
+    
+}
+
+input {
+    width: 298px;
+    padding: 5px;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    background-color: #fff;
+
+}
+textarea {
+    width: 290px;
+    height: 150px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    resize: none; /* ne pas agrandir la taille du texte*/
+}
+
+
+.bouton-info {
+    color:white;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom:1px;
+    
+    
+}
+
+.a-remplir button {
+    font-size: 20px;
+    background-color: #61b7de;
+    border-color: #5cadd3;
+    
+}
+
+
+.a-remplir input{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact form{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/***** fin du formulaire ****/
+
+/***** debut du footer ****/
+/* pied de page */
+
+.contenu-footer {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    background-color: lightgray;
+    
+}
+
+.contenu-footer h3{
+    font-size: 15px;
+    margin-top: 2%;
+    text-decoration: underline;
+    
+
+}
+
+.blog-footer{
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom:2% ;
+    font-style: oblique;
+}
+
+.blog-footer h4{
+    font-size: 16px;
+    
+}
+
+.annuaire {
+    margin-right: 10%;
+}
+
+.annuaire li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+
+}
+
+.contact li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black
+
+}
+
+.resotage {
+    text-align: center;
+    margin-top: 2%;
+    
+}
+
